@@ -14,7 +14,7 @@ const projects = [
     },
     {
         title: '口罩地圖 - 口罩地圖應用',
-        descript: ['運用 Vue.js，主要功能包括：','1.狀態管理與地圖整合：使用 Pinia 管理狀態，搭配 Leaflet 顯示各縣市藥局口罩數量。','API 串接：取得藥局資料，並將位置對應到地圖，方便查詢口罩存量。'],
+        descript: ['運用 Vue.js，主要功能包括：','1.狀態管理與地圖整合：使用 Pinia 管理狀態，搭配 Leaflet 顯示各縣市藥局口罩數量。','2.API 串接：取得藥局資料，並將位置對應到地圖，方便查詢口罩存量。'],
         imgSrc: maskStore,
         githubLink: 'https://github.com/Plai8/mask_store_app',
         demoLink: ' https://plai8.github.io/mask_store_app/'
@@ -47,7 +47,7 @@ const projects = [
 
 <template>
     <section class="p-[5%] max-w-[1500px] mx-auto" id="Project">
-        <h2 class="text-[60px] text-center mb-[15px]">Projects</h2>
+        <h2 class="text-[60px] text-center mb-[15px]">Projects.</h2>
         <div class="flex flex-wrap gap-x-[2.5%] justify-start">
             <ProjectCard :project-data="projects" />
         </div>
