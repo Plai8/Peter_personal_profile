@@ -37,12 +37,6 @@ const sendMail = () => {
         );
 }
 
-onMounted(()=> {
-    console.log('Service ID:', config.public.EMAILJS_SERVICE_ID)
-    console.log('Template ID:', config.public.EMAILJS_TEMPLATE_ID)
-    console.log('Public Key:', config.public.EMAILJS_PUBLIC_KEY)
-
-})
 </script>
 
 <template>
