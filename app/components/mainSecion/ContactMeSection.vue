@@ -24,7 +24,8 @@ const sendMail = () => {
         title:subtitle.value ,
         time: new Date(),
         content: content.value,
-    }
+    },
+    config.public.EMAILJS_PUBLIC_KEY
     ).then(
           () => {
             window.alert('傳送成功！✅');
@@ -37,7 +38,9 @@ const sendMail = () => {
 }
 
 onMounted(()=> {
-  
+    console.log('Service ID:', config.public.EMAILJS_SERVICE_ID)
+    console.log('Template ID:', config.public.EMAILJS_TEMPLATE_ID)
+    console.log('Public Key:', config.public.EMAILJS_PUBLIC_KEY)
 
 })
 </script>
